@@ -44,7 +44,7 @@ Cada petición tiene un identificador para que podáis citarlo en commits y conv
 - El valor inicial es 4, como ahora.
 - Se ve en todo momento qué grosor está elegido.
 - Afecta a lo que se dibuje desde ese momento. No cambia lo ya dibujado.
-- No hace falta recordarlo entre sesiones.
+- No se recuerda entre sesiones: al recargar la página vuelve a 4.
 
 **Libertad del equipo:** el tipo de control.
 
@@ -112,7 +112,10 @@ Cada petición tiene un identificador para que podáis citarlo en commits y conv
 - Los nombres son únicos, sin distinguir mayúsculas de minúsculas. Si ya existe, se avisa y no se guarda nada.
 - Borrar pide confirmación y no se puede deshacer.
 - Si se borra el dibujo abierto, el lienzo se queda como está, pero ya no hay ningún dibujo abierto.
+- Un dibujo recién guardado, ya sea con Guardar o con Guardar como nuevo, pasa a ser el dibujo abierto.
+- Guardar un dibujo abierto no cambia su nombre. Para cambiarlo está Renombrar.
 - Cada dibujo guarda también cuándo se modificó por última vez. La lista muestra esa fecha y va del más reciente al más antiguo según ella.
+- Los dibujos que ya existen se tratan como si su última modificación fuese su creación.
 
 **Libertad del equipo:** cómo se presenta todo esto en la interfaz.
 
@@ -130,7 +133,7 @@ Cada petición tiene un identificador para que podáis citarlo en commits y conv
 
 - Entre 1 y 5 capas.
 - Las capas son transparentes sobre el fondo blanco del lienzo, que no es una capa.
-- La capa nueva se añade encima de todas, se llama "Capa N" y pasa a ser la activa.
+- La capa nueva se añade encima de todas, se llama "Capa N", donde N es la posición que ocupa al crearla, y pasa a ser la activa.
 - Solo la capa activa recibe lo que se dibuja (lápiz, goma y formas). La goma deja transparente.
 - Una capa oculta no se ve. El orden decide qué queda encima.
 - Siempre queda al menos una capa. Al eliminar la activa, pasa a serlo la de debajo, o la de encima si era la inferior.
