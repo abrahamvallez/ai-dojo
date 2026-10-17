@@ -1,14 +1,18 @@
-# Kata · development
+# Development
 
-Dojo de desarrollo con IA, en parejas. En esta rama tenéis una app que ya funciona y los cambios que hay que hacerle, ya especificados.
+Un espacio para probar cómo se ejecutan con agentes unos cambios ya especificados. En esta rama tenéis una app que ya funciona y las specs de lo que hay que cambiarle.
 
-## El ejercicio
+## Qué vamos a probar
 
 Tenéis **Dojo Paint**, una app web para dibujar y guardar dibujos. Lo que hay que cambiarle está especificado en [`openspec/changes/`](./openspec/changes), y cómo se comporta hoy, en [`openspec/specs/`](./openspec/specs).
 
 Las specs ya están hechas, con escenarios concretos. No tenéis que pensar qué construir ni describirlo. Lo interesante es **cómo preparáis y ejecutáis ese trabajo con agentes**: qué contexto les dais, cómo dividís el trabajo, qué modo de ejecución elegís y cómo comprobáis el resultado.
 
-Para desarrollar con IA no hay un estándar de buenas prácticas como lo es TDD. Por eso esto no es un ejercicio de maestro y alumno: **nadie sabe cuál es la forma correcta**. Se trata de trabajar como lo haríais en vuestro día a día y de aprender de cómo lo hace la otra persona.
+## Una premisa honesta
+
+Nadie sabe todavía cuál es la mejor forma de desarrollar con IA: ni quien organiza esta sesión ni quien más la usa. No hay prácticas consolidadas. Es un momento parecido al de hace años, cuando nacieron prácticas como TDD o el movimiento ágil: incertidumbre, experimentos y gente compartiendo lo que le funcionaba y lo que no.
+
+Por eso aquí no hay maestros ni alumnos, ni una forma correcta de hacerlo. Hay personas probando cosas, contando lo que les pasa y aprendiendo unas de otras. Como dice el Manifiesto Ágil, estamos descubriendo mejores formas de desarrollar software haciéndolo y ayudando a otros a hacerlo.
 
 ## Cómo leer `openspec/`
 
@@ -37,16 +41,16 @@ La estructura está inspirada en OpenSpec.
 
 - **Parejas.** Cada pareja trabaja con un único repo. Mejor si no trabajáis juntos a diario o si usáis herramientas distintas.
 - **Tiempo.** 60-75 minutos de trabajo, 5 para preparar la retro y 30 de retro en común.
-- **Qué hacéis.** Elegid qué cambios abarcáis, en qué orden y con qué calidad. No hay que llegar al final, ni hay una solución de referencia ni un ranking.
-- **Qué entregáis.** Nada. Lo que sale de la kata es lo que aprendéis y lo que contáis en la retro.
+- **Qué hacéis.** Elegid qué cambios abarcáis, en qué orden y con qué calidad, trabajando como lo haríais en el trabajo o probando algo distinto que no os atrevéis a probar allí. No hay que llegar al final, ni hay una solución de referencia ni un ranking.
+- **Qué entregáis.** Nada. Lo que sale de la sesión es lo que veis, lo que probáis y lo que contáis en la retro.
 
-### Reglas
+### Acuerdos
 
-1. Cada persona usa las herramientas con las que trabaja a diario y las usa como lo haría un martes cualquiera.
-2. No hay maestro ni alumno. Si la otra persona hace algo que vosotros no hacéis, preguntad y probadlo.
+1. Usad las herramientas con las que trabajáis a diario, o probad otras. Es un buen sitio para experimentar.
+2. No hay expertos. Si la otra persona hace algo que vosotros no hacéis, no es ni mejor ni peor: preguntad y probadlo.
 3. Pensad en voz alta: qué pedís, por qué lo pedís y qué comprobáis antes de aceptar lo que genera la IA.
 4. Cambiad quién lleva el teclado cada 20 minutos aproximadamente.
-5. Acabar menos y mejor es una decisión tan válida como acabar más.
+5. Fallar vale. Si algo no funciona o la IA se equivoca, contadlo: lo que sale mal enseña tanto como lo que sale bien. Y acabar poco o mucho da igual.
 6. Haced commits como en el trabajo.
 7. Si os atascáis con el entorno (Node, red, instalación), pedid ayuda. Con el problema, no.
 
@@ -63,11 +67,11 @@ Se abre en <http://localhost:5173>.
 
 ## Retro
 
-Dejad las preguntas para el final, para que no condicionen cómo trabajáis. Ninguna tiene una respuesta correcta.
+Dejad las preguntas para el final, para que no condicionen cómo trabajáis. Ninguna tiene una respuesta correcta y no hace falta responderlas todas.
 
 ### Antes de la retro (5 minutos)
 
-Escribid, cada persona por su cuenta, tres cosas: lo que más os sorprendió, un momento en que la IA se equivocó y cómo os disteis cuenta, y algo que haríais distinto si empezarais ahora.
+Escribid, cada persona por su cuenta, tres cosas: lo que más os sorprendió, un momento en que la IA se equivocó y cómo os disteis cuenta, y algo que creíais saber y de lo que ya no estáis tan seguros.
 
 ### En pareja (10 minutos)
 
@@ -79,8 +83,9 @@ Escribid, cada persona por su cuenta, tres cosas: lo que más os sorprendió, un
 6. ¿Encontrasteis ambigüedades, huecos o contradicciones en las specs? ¿Qué hicisteis con ellos?
 7. ¿Qué pasó cuando el código existente no encajaba con lo que decía la spec?
 8. ¿Qué papel tuvo `tasks.md`? ¿Lo seguisteis, lo ignorasteis, lo reescribisteis?
-9. ¿Qué hizo la otra persona que vosotros no hacéis? ¿Lo probasteis?
-10. ¿Qué parte de este trabajo no delegaríais en un agente?
+9. ¿Qué probasteis que no hacéis normalmente? ¿Funcionó?
+10. ¿Qué hizo la otra persona que vosotros no hacéis? ¿Lo probasteis?
+11. ¿Qué parte de este trabajo no delegaríais en un agente?
 
 ### En grupo (20 minutos)
 
@@ -89,7 +94,8 @@ Escribid, cada persona por su cuenta, tres cosas: lo que más os sorprendió, un
 3. Con las specs ya escritas, ¿en qué se fue el tiempo?
 4. ¿Las specs ayudaron o limitaron? ¿Qué echasteis en falta en ellas?
 5. Si habéis hecho también `problem-solution`, ¿qué cambia entre trabajar desde specs y trabajar desde un texto de producto?
-6. ¿Qué repetiríais mañana en el trabajo y qué descartaríais?
+6. De lo que hemos visto, ¿qué os parece una buena práctica y qué os parece solo una impresión? ¿Cómo podríamos comprobarlo?
+7. ¿Qué hipótesis os lleváis para probar esta semana en el trabajo? ¿Cuándo la contaréis al grupo?
 
 ## Sobre la app
 
