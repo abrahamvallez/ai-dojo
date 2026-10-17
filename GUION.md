@@ -1,6 +1,10 @@
 # Guion de facilitación
 
-Para quien dinamiza la sesión. Las ramas de ejercicio no incluyen este documento a propósito: contiene notas que no deben ver las parejas.
+Para quien dinamiza la sesión. Las ramas de cada variante no incluyen este documento a propósito: contiene notas que no deben ver las parejas.
+
+## Tu papel
+
+No eres un experto ni se espera que lo seas: nadie lo es. Tu trabajo es cuidar un espacio donde sea fácil probar cosas, fallar y contar lo que pasa, y eso te incluye a ti. Si tienes opiniones sobre cómo trabajar con IA, ofrécelas como hipótesis, no como respuestas.
 
 ## Antes de la sesión
 
@@ -18,7 +22,7 @@ Para quien dinamiza la sesión. Las ramas de ejercicio no incluyen este document
 | ------- | -------------------------------- |
 | 0-10    | Intro                            |
 | 10-15   | Parejas y arranque               |
-| 15-90   | Kata (75 min)                    |
+| 15-90   | Sesión de trabajo (75 min)       |
 | 90-95   | Preparar la retro                |
 | 95-125  | Retro                            |
 
@@ -42,15 +46,15 @@ Hacer las tres variantes en una sola sesión no es realista.
 
 Qué contar:
 
-1. **Qué es:** una kata de desarrollo con IA. Parejas, un problema y poca guía.
-2. **Por qué es distinta:** para TDD hay una forma reconocida de hacerlo bien. Para desarrollar con IA no existe nada equivalente, así que no hay maestro ni alumno.
-3. **Qué esperamos:** que trabajéis como lo haríais un día cualquiera y que penséis en voz alta.
-4. **Qué no hay:** solución de referencia, ranking, evaluación ni demo final.
-5. **Las reglas:** leerlas del README de la rama.
-6. **Qué haré yo:** no ayudar con el cómo. Sí con el entorno. Pasaré por las parejas a observar y a preguntar por qué hacéis lo que hacéis.
+1. **Qué es:** un espacio para probar cosas y compartir cómo desarrollamos con IA. Parejas, un problema pequeño y poca guía.
+2. **Por qué existe:** nadie sabe todavía cuál es la mejor forma de desarrollar con IA. Estamos como hace años, cuando nacieron prácticas como TDD o el movimiento ágil: experimentando, compartiendo y equivocándonos. Podéis leer la frase con la que empieza el Manifiesto Ágil: *We are uncovering better ways of developing software by doing it and helping others do it.*
+3. **Qué esperamos:** que probéis, que penséis en voz alta y que contéis lo que pasa, también cuando sale mal. Es un buen momento para probar algo que no os atrevéis a probar en el trabajo.
+4. **Qué no hay:** expertos, solución de referencia, ranking, evaluación ni demo final.
+5. **Los acuerdos:** leerlos del README de la rama.
+6. **Qué haré yo:** no ayudar con el cómo, sí con el entorno. Pasaré por las parejas a observar y a preguntar por qué hacéis lo que hacéis. Y también estoy experimentando: no sé más que vosotros.
 7. **Tiempos y retro:** cuándo acaba y cómo será la retro.
 
-## Durante la kata
+## Durante la sesión
 
 **Qué hacer:**
 
@@ -58,14 +62,15 @@ Qué contar:
 - Preguntar sin dirigir: "¿por qué le habéis pedido eso?", "¿cómo sabéis que está bien?".
 - Avisar del tiempo: a la mitad, a 10 minutos y a 5.
 - Recordar el cambio de teclado cada 20 minutos.
+- Compartir lo que vayas descubriendo, como una observación más y no como una corrección.
 
-**Qué no hacer:** sugerir herramientas, corregir enfoques o decir "eso no se hace así".
+**Qué no hacer:** sugerir herramientas, corregir enfoques o decir "eso no se hace así". Nadie sabe todavía cómo se hace.
 
 **Cuándo intervenir:**
 
 - Problemas de entorno: siempre.
 - Una pareja lleva más de 10 minutos bloqueada: con una pregunta, no con la solución.
-- Una persona acapara el teclado: recordar la regla.
+- Una persona acapara el teclado: recordar el acuerdo.
 
 ### Qué observar
 
@@ -76,6 +81,7 @@ Qué contar:
 - **Cuando falla:** cómo lo detectan y qué hacen (repetir, reformular, escribirlo a mano).
 - **Código existente** (ramas con app): cómo lo entienden y si refactorizan o lo rodean.
 - **Reparto en la pareja:** quién teclea, quién piensa, si hablan, si usan IA a la vez.
+- **Experimentos:** si prueban algo que no hacen normalmente y qué pasa.
 - **Commits:** tamaño y ritmo.
 
 Apuntad frases literales: dan mucho juego en la retro.
@@ -83,7 +89,7 @@ Apuntad frases literales: dan mucho juego en la retro.
 ## Retro (30-35 minutos)
 
 1. **5 minutos, en solitario:** las tres cosas del README.
-2. **10 minutos, en pareja:** las preguntas del README de su rama.
+2. **10 minutos, en pareja:** las preguntas del README de su rama. No hace falta responderlas todas.
 3. **20 minutos, en grupo:** en el tablero, con estas columnas. Cada pareja pega una o dos notas por columna, se agrupan y se comenta lo que más se repite y lo que más diverge.
 
    - Cómo empezamos
@@ -91,11 +97,15 @@ Apuntad frases literales: dan mucho juego en la retro.
    - Dónde falló
    - Cómo verificamos
    - Lo que me llevo de mi pareja
-   - Lo que probaré el lunes
+   - Lo que probaré esta semana
 
-Cierre: cada persona dice una cosa que va a probar.
+Cierre: cada persona nombra una hipótesis que va a probar esta semana en el trabajo, y se acuerda cómo y cuándo se contará al grupo (un canal, la siguiente sesión).
 
 Consejos: pedid ejemplos concretos, evitad hablar de "lo correcto" y buscad las diferencias entre parejas. Las preguntas de grupo están en el README de cada rama.
+
+## Después de la sesión
+
+Recoged lo aprendido (fotos del tablero, notas, frases literales) y compartidlo con quienes participaron. Lo que se aprende aquí vale más si se acumula y se contrasta: si alguien prueba su hipótesis, que la cuente. Y si a alguien se le ocurre una variante nueva del problema, que la proponga.
 
 ## Notas por rama
 
@@ -152,7 +162,7 @@ Las decisiones de producto son las mismas en los dos formatos (`PRODUCT_REQUESTS
 
 ## Variantes que faltan
 
-De la idea original quedan dos por construir, que pueden ser ramas nuevas con el mismo esquema:
+Quedan dos por construir, que pueden ser ramas nuevas con el mismo esquema:
 
 - **`discovery`:** pensar la funcionalidad y escribir las specs. Las de `development` sirven de referencia para comparar.
 - **`autopilot`:** automatizar el desarrollo por completo, de las specs al código con la menor intervención posible.
