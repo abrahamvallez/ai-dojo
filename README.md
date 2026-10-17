@@ -44,6 +44,7 @@ server/api-plugin.ts          API REST montada sobre el servidor de Vite
 server/drawing-store.ts       Persistencia en data/drawings.json
 server/drawing-store.test.ts  Tests de la persistencia
 data/                         drawings.json se crea al guardar el primer dibujo
+openspec/                     Specs del comportamiento actual y de los cambios pendientes
 ```
 
 ## API
