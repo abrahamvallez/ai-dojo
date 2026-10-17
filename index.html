@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojo Paint</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Dojo Paint</h1>
+      </header>
+      <main>
+        <section class="board">
+          <div id="toolbar"></div>
+          <canvas id="canvas" width="800" height="500"></canvas>
+        </section>
+        <aside class="sidebar">
+          <h2>Mis dibujos</h2>
+          <div class="save-box">
+            <input id="drawing-name" type="text" placeholder="Nombre del dibujo" />
+            <button id="save-btn">Guardar</button>
+          </div>
+          <p id="status"></p>
+          <ul id="drawings"></ul>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

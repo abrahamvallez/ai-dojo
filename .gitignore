@@ -1,0 +1,8 @@
+node_modules
+dist
+*.log
+.DS_Store
+
+# Los dibujos guardados se crean en local al usar la app
+data/drawings.json
+data/drawings.json.tmp

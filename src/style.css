@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #f4f4f6;
+  color: #222;
+}
+
+header {
+  padding: 12px 24px;
+  background: #1d3557;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+main {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  align-items: flex-start;
+}
+
+.board {
+  flex: 1;
+  min-width: 0;
+}
+
+#toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+
+#toolbar button:not(.swatch) {
+  margin-left: 12px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  background: white;
+  box-shadow: 0 0 0 1px #c9c9d1;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.sidebar {
+  width: 260px;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px #e1e1e6;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.save-box {
+  display: flex;
+  gap: 6px;
+}
+
+.save-box input {
+  flex: 1;
+  min-width: 0;
+  padding: 6px;
+}
+
+.save-box button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+#status {
+  min-height: 1.2em;
+  margin: 8px 0;
+  font-size: 0.85rem;
+  color: #2a9d8f;
+}
+
+#drawings {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#drawings li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem !important;
+}
+
+#drawings small {
+  display: block;
+  color: #777;
+}
+
+#drawings .empty {
+  color: #777;
+}
